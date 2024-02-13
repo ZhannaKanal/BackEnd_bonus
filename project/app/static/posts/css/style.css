@@ -1,0 +1,675 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button{
+    font-size: 0.8rem;
+    font-weight: 700;
+    outline: none;
+    border: none;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 13px 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+button:hover{
+    background-color: rgb(141, 141, 141);
+}
+.navbar{
+    font-size: 18px;
+    top:0;
+    left:0;
+}
+.navbar-light .navbar-nav .nav-link{
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+}
+
+ .navbar-light .navbar-nav .nav-link:hover,
+ .navbar i:hover, 
+ .navbar-light .navbar-nav .nav-link.active,
+ .navbar i.active{
+    color:#515CE6;
+}
+
+
+.navbar i{
+    font-size: 1.2rem;
+    padding: 0 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+#bar{
+    font-size: 1.5rem;
+    padding: 7px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
+
+}
+#bar:hover,
+#bar.active{
+    color: rgb(255, 255, 255);
+}
+@media only screen and (max-width:991px){
+    body > nav > div > button:hover,
+    body > nav > div > button:focus{
+        background-color: #515CE6;
+    }
+    body > nav > div > button:hover #bar,
+    body > nav > div > button:focus #bar{
+        color: rgb(255, 255, 255);
+    }
+    #navbarSupportedContent > ul {
+        margin: 1rem;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right;
+    }
+    #navbarSupportedContent > ul > li:nth-child(n) > a{
+        padding: 10px 0;
+    }
+    .contact_2{
+        margin-top: 2cm;
+        padding: 40px;
+       
+        
+    }
+    .zhanna_haha{
+        flex-direction: column;
+        width: 100%;
+    }
+    .zhanna_haha .contactInfo{
+      justify-content: center;
+    }
+    .zhanna_haha .contactInfo,
+    .contactForm{
+        width: 100%;
+    }
+    .bbb{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .image{
+        height: 100vh;
+        display: none;
+    }
+    .content{
+        height: 100vh;
+    }
+    .content h2{
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .content span{
+        margin: 20px 0;
+    }
+    .content p{
+        font-size: 14px;
+    }
+    .links li a{
+        font-size: 14px;
+    }
+    .links{
+        margin: 5px 0;
+    }
+    .links li{
+        padding: 6px 10px;
+    }
+    .icons li i{
+        font-size: 15px;
+    }
+}
+
+
+.navbar-light .navbar-toggler{
+    border: none;
+    outline: none;
+}
+
+
+.birinwi_img{
+    width: 100%;
+    object-fit: cover;
+    height: 700px;
+}
+#home{
+    background-image: url(jewelry1.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position:top 60px center ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+}
+.container1{
+    text-align: center;
+}
+.h_get{
+    color: rgba(233, 192, 56, 0.904);
+    font-family: 'Sen';
+    margin-left: 20px;
+}
+.h_new{
+    color: rgba(233, 192, 56, 0.904);
+    font-family: 'Sen';
+    margin: 0 0.5cm 0.5cm 0;
+    text-transform: uppercase;
+}
+#new .one img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+#new .one .details{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+#new .one:hover .details{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#new .one .details button{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0,0,0);
+    background: none;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgb(0,0,0);
+    padding: 1px;
+    transform: translateY(70px);
+    transition: 0.3s ease;
+}
+#new .one .details button:hover{
+    color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+#new .one:nth-child(1) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+#new .one:nth-child(2) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+} 
+#new .one:nth-child(3) .details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+} 
+.txt_bir{
+    color: rgb(255, 255, 255);
+    font-family: 'Sen';
+}
+#new{
+    margin-top: 2cm;
+}
+#featured{
+    margin-top: 2cm;
+}
+.product{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product img{
+    transition: 0.3s all;
+
+}
+.product:hover img{
+    opacity: 0.7;
+}
+.product_2 img{
+    transition: 0.3s all;
+    width:100%;
+    height:auto;
+     box-sizing:border-box;
+     object-fit:cover;
+}
+.product_2{
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+.product_2:hover img{
+    opacity: 0.7;
+}
+.product .buy-btn{
+    background: #daaa0f;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product_2 .buy-btn{
+    color: white;
+    background: rgb(231, 218, 30);
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+.product_2:hover .buy-btn{
+    transform: translateY(0);
+    opacity: 1;
+}
+.product:hover .buy-btn{
+  
+    transform: translateY(20px);
+    opacity: 1;
+  
+}
+.star i{
+    font-size: 0.8rem;
+    color: gold;
+}
+.star{
+    padding: 10px 0;
+}
+#banner{
+    background-image: url("b1.jpg");
+    width: 100%;
+    height: 60vh;
+    margin-top: 2cm;
+    background-size: cover;
+    background-position:top 70px center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#banner h1{
+    color: rgb(255, 255, 255);
+    font-family: 'Sen';
+    font-size: 65px;
+    margin-top: -3cm;
+    margin-left: -1cm;
+}
+#featured > div.row.mx-auto.container > nav > ul> li.page-item.active> a{
+    background-color: rgb(135, 170, 209);
+}
+#featured > div.row.mx-auto.container > nav > ul> li:nth-child(n):hover>a{
+    background-color: rgb(209, 199, 65);
+    color: white;
+}
+.container_tipa{
+    background-color: white;
+}
+.price{
+    text-align: center;
+}
+.rusca{
+    text-align: center;
+}
+.kazakwa{
+    text-align: center;
+}
+.birnarse{
+    color: black;
+    padding: 13.5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.birnarse:hover{
+    background: rgb(218, 170, 15);
+    transition: 1s;
+    color: honeydew;
+}
+.row1{
+    background: rgb(218, 170, 15);
+    padding: 2px;
+}
+.row2{
+    border: 1px solid rgb(218, 170, 15);
+    color: black;
+    padding: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 25px;
+}
+.row2:hover{
+    background: rgb(218, 170, 15);
+    transition: 1s;
+    color: rgb(0,0,0);
+}
+.row4{
+    margin-top: 1cm;
+    font-size: 25px;
+    text-align: center;
+}
+.row5{
+    font-style: normal;
+    font-size: 15px;
+    font-family: 'Sen';
+    text-align: center;
+  margin-top: 1cm;
+}
+.row3{
+    color: black;
+    padding: 13.5px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+.row3:hover{
+    background: rgb(218, 170, 15);
+    transition: 1s;
+    color: rgb(0,0,0);
+}
+.pagination a{
+    color: black;
+}
+footer{
+    margin-top: 2.2cm;
+    background-color:rgb(218, 170, 15);
+   
+}
+footer span{
+    color: rgb(255, 255, 255);
+}
+footer i{
+    color: white;
+}
+.style_haha{
+    color: white;
+    text-decoration: none;
+}
+
+footer {
+    color: rgb(255, 255, 255);
+}
+.hey{
+    color: rgb(255, 255, 255);
+}
+.aaa{
+    display: grid;
+    background-color: rgb(255, 255, 255);
+    align-content: center;
+    min-height: 120vh;
+}
+.bbb{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 90vh;
+    width: 100%;
+
+    margin: 0 auto;
+}
+.image{
+    background: url("e3.png.crdownload") center no-repeat;
+    width: 100%;
+    object-fit: cover;
+}
+.content{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.content h2{
+    text-transform: uppercase;
+    font-size: 35px;
+    letter-spacing: 6px;
+    opacity: 0.9;
+}
+.content span{
+    height: 0.5px;
+    width: 80px;
+    background: #777;
+    margin: 30px 0;
+}
+.content p{
+    padding-bottom: 15px;
+    font-weight: 300;
+    opacity: 0.7;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+.links{
+    margin: 15px 0;
+}
+.links li{
+    border: 0.5px solid #777 ;
+    list-style: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    width: 160px;
+    text-align: center;
+}
+.links li a{
+text-transform: uppercase;
+color: #777;
+text-decoration: none;
+}
+.links li:hover{
+    border-color:rgb(218, 170, 15);
+}
+.links li:hover a{
+    color: rgb(218, 170, 15);
+}
+.vertical-line{
+    height: 30px;
+    width: 0.5px;
+    background: #777;
+    margin: 0 auto;
+
+}
+.icons{
+    display: flex;
+    padding: 15px 0;
+    margin-left: 30px;
+}
+.icons li{
+    display: block;
+    padding: 2px;
+    margin:2px ;
+}
+.icons li i{
+    font-size: 26px;
+    opacity: 0.8;
+}
+.icons li i:hover{
+    color:rgb(218, 170, 15);
+}
+.contact_2{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url(n3.jpg);
+    background-size: cover;
+}
+.contact_2 .content_2{
+    max-width: 800px;
+    text-align: center;
+}
+.contact_2 .content_2 h2{
+    font-size: 36px;
+    font-weight: 500;
+    color: #fff;
+}
+.contact_2 .content_2 p{
+    font-weight: 300;
+    color: #fff;
+}
+.zhanna_haha{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.zhanna_haha .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.zhanna_haha .contactInfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+.zhanna_haha .contactInfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.zhanna_haha .contactInfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+.zhanna_haha .contactInfo .box .text h3{
+    font-weight: 500;
+    color: rgb(208, 205, 121);
+}
+.contactForm{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+}
+.contactForm h2{
+    font-size: 30px;
+    color: #333;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize: none;
+}
+.contactForm .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666; 
+}
+.contactForm .inputBox input:focus ~span,
+.contactForm .inputBox input:valid ~span,
+.contactForm .inputBox textarea:focus ~span,
+.contactForm .inputBox textarea:valid ~span{
+    color: #e91e63;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]{
+    width: 100px;
+    background: rgb(208, 205, 121);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.regform{
+    width: 800px;
+    background-color: rgb(0,0,0,0.6);
+    margin:auto;
+    color:black;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+    border-radius: 15px 15px 15px 15px;
+}
+.regform2{
+    background-color: rgb(0,0,0,0.5);
+    width: 800px;
+    margin: auto;
+}
+form{
+    padding:10px;
+}
+#name{
+    margin-top: 50px;
+    width:100%;
+}
+.name{
+    margin-left: 25px;
+    margin-top: 30px;
+    width:250px;
+    color:white;
+    font-size:18px;
+    font-weight: 700;
+}
+.fname{
+    position: relative;
+    left: 150px;
+    top:10px;
+    line-height: 40px;
+    border-radius: 6px;
+    padding: 0 22px;
+    font-size: 16px;
+}
+
+#bttn{
+background-color: rgb(26, 26, 93);
+display: block;
+margin: 40px 0px 0px 20px;
+text-align: center;
+border-radius: 12px;
+padding:14px 110px;
+outline: none;
+color:white;
+cursor: pointer;
+transition: 0.25px;
+}
+#bttn:hover{
+    background-color: rgba(26, 26, 93, 0.51);
+}

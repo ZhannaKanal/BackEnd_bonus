@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+         <title>{{title}}</title>
+</head>
+<body>
+{% comment %} <h1>Hello, {{ esim|default:'Guest' }}!</h1>
+          {% endcomment %}
+        {% for post in post %}
+          <h1>Kosh,keldiniz {{post.esim}}</h1>
+          <p>Tapsyrysynyz kabyldandy</p>
+        {% endfor %}
+        <p>Rastau uwin batyrmany basynyz</p>
+        <a href="{%url 'send'%}">
+        <button type="submit">send</button></a>
+</body>
+</html>
+<body>

@@ -1,0 +1,272 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jewelry Shop</title>
+        <link rel="stylesheet" href="{% static 'posts/css/style.css'%}"/>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Sen' rel='stylesheet'>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+        <div class="container" >
+          <a href="{%url 'jewelry'%}"><img src="{% static 'posts/images/jlogo.jpg' %}" alt="..." width="100px" height="40px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+          aria-expanded="false" aria-label="Toggle navigation">
+            <span><i id="bar" class="fas fa-bars"></i></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+             
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'jewelry'%}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'shop'%}">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'price'%}">Price</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'about'%}">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{%url 'contactus'%}">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <i class="fal fa-search"></i>
+                <i class="fal fa-shopping-bag"></i>
+              </li>
+              
+              
+          </div>
+        </div>
+      </nav>
+
+    <section id="featured" class="my-5 py-5">
+        <div class="container_tipa container  mt-5 py-5">
+            <h2 class="font-weight-bold text-center">Our Featured</h3>
+            <hr>
+            <p class="text-center">Here you can check out new products with fair price on KZhJewelry</p>
+        </div>
+        <div class="row mx-auto container">
+            <div class="product_2 text-center col-lg-3 col-md-4 col-12">
+              <a href="{%url 'shop1'%}">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/b4.jpg' %}" alt=""></a>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Bilezik</h5>
+                <h4 class="p-price">6500tg</h4>
+                <a href="{%url 'shop1'%}">
+                <button class="buy-btn">Buy now</button></a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="shopping _2.html">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/e4.jpg' %}" alt=""></a>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Syrgga</h5>
+                <h4 class="p-price">8000tg</h4>
+                <a href="shopping _2.html">
+                <button class="buy-btn">Buy now</button></a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="shopping_3.html">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/r4.jpg' %}" alt=""></a>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Juzik</h5>
+                <h4 class="p-price">4000tg</h4>
+                <a href="shopping_3.html">
+                <button class="buy-btn">Buy now</button></a>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+              <a href="shopping_4.html">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/n4.jpg' %}" alt=""></a>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Monshak</h5>
+                <h4 class="p-price">5000tg</h4>
+                <a href="shopping_4.html">
+                <button class="buy-btn">Buy now</button></a>
+            </div>
+
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/n2.jpg' %}" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Monshak </h5>
+                <h4 class="p-price">5000tg</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/e2.jpg' %}" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Syrgga </h5>
+                <h4 class="p-price">8000tg</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/b2.jpg' %}" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name"> Bilezik</h5>
+                <h4 class="p-price">6500tg</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+            <div class="product text-center col-lg-3 col-md-4 col-12">
+                <img class="img-fluid mb-3" src="{% static 'posts/images/r2.webp' %}" alt="">
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h5 class="p-name">Juzik</h5>
+                <h4 class="p-price">4000tg</h4>
+                <button class="buy-btn">Buy now</button>
+            </div>
+
+            <nav aria-label="...">
+                <ul class="pagination mt-5">
+                  <li class="page-item disabled">
+                    <a class="page-link" >Previous</a>
+                  </li>
+                  <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item " aria-current="page">
+                    <a class="page-link" href="#">2</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </section>
+
+    
+ 
+    <footer class="footer_tipa text-center text-lg-start text-muted">
+
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div class="me-5 d-none d-lg-block">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="https://www.facebook.com/qazaq.republic.brand/" class=" me-4 text-reset">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://vk.com/qazaqrepublicshop" class=" me-4 text-reset">
+            <i class="fab fa-vk"></i>
+          </a>
+          <a href="https://www.instagram.com/qazaq.republic/" class="me-4 text-reset">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+   
+      <section class="style_haha">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+               <img src="{% static 'posts/images/jlogo.jpg'%}" alt="" width="100px" height="40px">
+              </h6>
+            </div>
+  
+      
+            {%for a in footer%}
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                {{a.prehead}}
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">{{a.head}}</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">{{a.mid}}</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">{{a.pre}}</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">{{a.pri}}</a>
+              </p>
+              <p>
+                  <a href="#!" class="text-reset">{{a.end}}</a>
+                </p>
+            </div>
+            {%endfor%}
+  
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+              <p><i class="fas fa-home me-3"></i>ул. Розыбакиева, д. 247а в Алматы</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i> kzhjewelry.157@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> + 7 778 444 48 84</p>
+              <p><i class="fas fa-print me-3"></i> + 7 778 444 84 84</p>
+            </div>
+         
+          </div>
+       
+        </div>
+      </section>
+  
+      <div class="hey text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">KZhJewelry.com</a>
+      </div>
+  
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+</body>
+</html>
